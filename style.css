@@ -42,9 +42,8 @@ nav{
 /* -------------------- MAIN------------------ */
 
 .intro{
-    padding-top: 5rem;
     width: 100%;
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh);
     background:linear-gradient(0deg, #1b001093, #1b001093), url(https://kinsta.com/wp-content/uploads/2021/11/what-is-a-full-stack-developer-1024x512.png);
     background-repeat: no-repeat;
     background-size: cover;
