@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --head-height:4rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+/* ----------HEADER---------------- */
+
+nav{
+    width: 100%;
+    height: var(--head-height);
+    background-color: #700770;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.menu-itens{
+    display: flex;
+    gap: 5em;
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    outline: none;
+}
+
+.menu-link:hover, .menu-link:focus{
+    color: #04bb19;
+}
+
+/* -------------------- MAIN------------------ */
+
+.intro{
+    padding-top: 5rem;
+    width: 100%;
+    min-height: calc(100vh - 5rem);
+    background:linear-gradient(0deg, #1b001093, #1b001093), url(https://kinsta.com/wp-content/uploads/2021/11/what-is-a-full-stack-developer-1024x512.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.intro_main{
+    margin-top: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.intro_main h2{
+    letter-spacing: 1em;
+    color: #ff00ff;
+}
+
+.intro_main h1{
+    color:white;
+    font-size: 5rem;
+}
+
+.intro_main h3{
+    color: white;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.intro_main h3::before{
+    height: .9em;
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    width: .1em;
+    margin-right: 10px;
+}
+
+.intro_main h3::after{
+    height: .9em;
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    width: .1em;
+    margin-left: 10px;
+}
+
+.git{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.git g{
+    fill: #700770;
+}
+
+.intro_links{
+    display: flex;
+    gap: 1rem;
+}
+
+/* SOBRE */
+
+.sobre{
+    padding: 3rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-intro{
+    max-width: 30em; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-intro h3{
+    color: #700770;
+    letter-spacing: .2em;
+    font-size: 1.2em;
+}
+
+.sobre-intro h2{
+    font-size: 1.5em;
+    color: #1b001b;
+    font-family: 'Roboto Slab';
+}
+
+.sobre_mim{
+    display: flex;
+    gap: 2em;
+}
+
+.sobre_mim p{
+    font-family: 'Roboto Slab';
+    text-align: justify;
+}
+
+.sobre_mim img{
+    width: 10em;
+    height: 10em ;
+    border-radius: 10em;
+    margin-top: 2.5em;
+}
+
+
+/* ------------FOOTER-------------- */
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #700770;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ff00ff;
+    font-size: 1rem;
+}
