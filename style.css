@@ -48,13 +48,11 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
     align-items: center ;
-    flex-direction: column;
+    justify-content: center ;
 }
 
 .intro_main{
-    margin-top: 14%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,17 +95,19 @@ nav{
 }
 
 .git{
-    height: 2.5rem;
-    width: 2.5rem;
+    height:3rem;
+    width:3rem;
 }
 
 .git g{
-    fill: #700770;
+    fill: #701370;
 }
 
 .intro_links{
     display: flex;
     gap: 1rem;
+    position: absolute;
+    bottom: 0;
 }
 
 /* SOBRE */
@@ -120,7 +120,7 @@ nav{
 }
 
 .sobre-intro{
-    max-width: 30em; 
+    max-width: 30rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,10 +150,10 @@ nav{
 }
 
 .sobre_mim img{
-    width: 10em;
-    height: 10em ;
-    border-radius: 10em;
-    margin-top: 2.5em;
+    width: 10rem;
+    height: 10rem ;
+    border-radius: 10rem;
+    margin-top: 2.5rem;
 }
 
 
@@ -172,3 +172,33 @@ footer a{
     color: #ff00ff;
     font-size: 1rem;
 }
+
+/* media queries */
+@media screen and (max-width: 425px) {
+    *{
+        font-size: 14px
+    }
+
+    .intro_main h1{
+        color:white;
+        font-size: 4rem;
+    }
+
+    .git{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .sobre_mim{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    *{
+        font-size: 12px;
+    }
+}
+
