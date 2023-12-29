@@ -15,11 +15,12 @@
 nav{
     width: 100%;
     height: var(--head-height);
-    background-color: #700770;
+    background-color: #700770 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 1;
 }
 
 .menu-itens{
@@ -156,6 +157,58 @@ nav{
     margin-top: 2.5rem;
 }
 
+/* ------------------------ certificado -------------------------------- */
+
+.certificates{
+    padding: 3rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 20rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.certificates h2{
+    position: absolute;
+    top: -1rem;
+    color: #700770;
+    letter-spacing: .2em;
+    font-size: 1.2em;
+}
+
+.card {
+    text-align: center;
+    background-color: #700770;
+    padding: 2rem;
+    border-radius: .7em;
+}
+
+.pre-img{
+    width: 10rem;
+    margin-bottom: .8rem;
+}
+
+.card h3{
+    color: #c746c7;
+}
+
+p{
+    color: #c746c7;
+    text-align: left;
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ------------FOOTER-------------- */
 footer{
@@ -201,4 +254,8 @@ footer a{
         font-size: 12px;
     }
 }
+
+
+
+
 
